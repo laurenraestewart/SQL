@@ -1,0 +1,25 @@
+--Create a grocery store database
+
+CREATE TABLE clothingstore (price INTEGER PRIMARY KEY, item TEXT, color TEXT, gender TEXT, amount INTEGER);
+
+INSERT INTO clothingstore VALUES (15.00, "short sleeve shirt", "small pattern", "women", 50);
+INSERT INTO clothingstore VALUES (20.00, "long sleeve shirt", "black", "women", 40);
+INSERT INTO clothingstore VALUES (80.00, "shoes", "grey", "unisex", 30);
+INSERT INTO clothingstore VALUES (8.00, "umbrella", "blue", "unisex", 51);
+INSERT INTO clothingstore VALUES (30.00, "skirt", "pink", "women", 35);
+INSERT INTO clothingstore VALUES (40.00, "pants", "brown", "men", 60);
+INSERT INTO clothingstore VALUES (50.00, "jeans", "blue", "unisex", 41);
+INSERT INTO clothingstore VALUES (90.00, "small hat", "red", "women", 4);
+INSERT INTO clothingstore VALUES (91.00, "big hat", "blue", "men", 7);
+INSERT INTO clothingstore VALUES (48.00, "leather pants", "black", "men", 39);
+INSERT INTO clothingstore VALUES (39.00, "dress", "white", "women", 80);
+INSERT INTO clothingstore VALUES (38.00, "short dress", "beige", "women", 87);
+INSERT INTO clothingstore VALUES (37.00, "maxi dress", "grey", "women", 68);
+INSERT INTO clothingstore VALUES (10.00, "flip flops", "red", "unisex", 29);
+INSERT INTO clothingstore VALUES (76.00, "jacket", "tan", "unisex", 44);
+
+--display total amount of items in warehouse
+SELECT SUM(amount) FROM clothingstore;
+
+--display the database ordered by price. 
+SELECT * FROM clothingstore ORDER BY price;
